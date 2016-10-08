@@ -1,0 +1,17 @@
+<p>訂票發生錯誤 - 您要預訂車票的總座位數為零</p>
+<strong>該區間無剩餘座位</strong>
+
+<strong>您的車票已訂到</strong>
+<p class="gray01"><span class="hd1">身分證字號：</span> <span id="spanPid" class="hv1 blue01 bold01">XXXXXXXXXX</span></p>
+
+cancel: /ccancel.jsp (personId, orderCode)
+
+cancel2: ccancel_rt.jsp (personId, orderCode)
+
+
+<strong>您的車票取消成功</strong>
+<strong>您的車票取消失敗</strong>
+
+<strong>該車次可訂票時間(含當日訂票)已過</strong>
+
+http://railway.hinet.net/station_code.htm
