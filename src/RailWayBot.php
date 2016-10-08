@@ -61,7 +61,7 @@
                 return 'something error happen'.PHP_EOL;
             }
             else {
-                $this->getImageUrl($response);
+                $this->getImage($response);
                 $method = 'GET';
                 $uri = 'http://railway.hinet.net/'.$this->strs['img_str'];
                 $imgResource = fopen(__DIR__.'/../captcha.jpg', 'w');
@@ -188,7 +188,7 @@
                 foreach($resMsg as $key => $value) {
                     $crawler = new Crawler($value);
                     $pTxt = $crawler->filter('p')->text();
-                    $result['message'] = $pTxt;
+                    $result[$index] = $pTxt;
                     $index += 1;
                 }
             }
@@ -196,7 +196,7 @@
             return $result;
         }
 
-        private function getImageUrl($contents)
+        private function getImage($contents)
         {
             $crawler = new Crawler($contents);
             $imgTag = $crawler->filter('img');

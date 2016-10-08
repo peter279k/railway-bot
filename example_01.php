@@ -147,7 +147,6 @@
     Cursor::colorize('fg('.$color.')');
     echo 'Waiting...'.PHP_EOL;
     $response = $bot->bookTicket($captchaCode);
-    $response = iconv('big5', 'utf-8', $response);
 
     if($response === false) {
         $color = 'red';
@@ -158,8 +157,10 @@
         $color = 'green';
         Cursor::colorize('fg('.$color.')');
         $result = $bot->parseResult($response);
-        echo $result['message'].PHP_EOL;
         foreach($result as $value) {
             echo $value.PHP_EOL;
         }
     }
+
+    $color = 'white';
+    Cursor::colorize('fg('.$color.')');
