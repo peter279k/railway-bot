@@ -15,7 +15,9 @@
         "symfony/css-selector": "^3.1",
         "hoa/console": "^3.16",
         "povils/figlet": "^0.1.0",
-        "pear/console_table": "^1.3"
+        "pear/console_table": "^1.3",
+        "mikey179/vfsStream": "^1.6",
+        "mockery/mockery": "^0.9.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5"
